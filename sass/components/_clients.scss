@@ -1,0 +1,27 @@
+.list.clients__list {
+    margin-left: -30px;
+}
+.clients__icon {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 170px;
+    height: 92px;
+    text-align: center;
+    border: 1px solid $main-icon-color;
+    border-radius: 4px;
+    margin-left: 30px;
+    @extend %background-color;
+}
+.clients__link {
+    &:hover .icon,
+    &:focus .icon {
+    fill: $activity-color;
+    }
+    &:hover .clients__icon,
+    &:focus .clients__icon {
+    border-color: $activity-color;
+    }
+}

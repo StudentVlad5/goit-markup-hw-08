@@ -1,0 +1,100 @@
+footer {
+    padding: 60px 0;
+}
+.container.footer-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.footer__logo {
+    margin: 0 0 20px;
+}
+.post-address {
+    color: $primiry-color;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.logo--color-primary {
+    color: $primiry-color;
+}
+.contact.contact-item {
+    display: block;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    color: $secondary-footer-text-color;
+}
+.footer__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+.footer__item.link {
+    padding-top: 10px;
+}
+.footer__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primiry-color;
+}
+.footer__list--social {
+    display: flex;
+    flex-wrap: wrap;
+    width: 206px;
+}
+.footer__column2 {
+    padding-left: 70px;
+}
+.social__item {
+    flex-basis: calc((100% / 4) - 30px);
+}
+.social__item:not(:last-child) {
+    margin-right: 10px;
+}
+.icon.icon-footer {
+    fill: $primiry-color;
+}
+.footer__column3 {
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+}
+.footer__list--mail,
+.mail--submit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.email-for-news {
+    padding: 15px 16px;
+    width: 358px;
+    margin-right: 12px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    color: $primiry-color;
+    background-color: $footer-background-color;
+}
+.email-for-news::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: $secondary-footer-text-color;
+}
+.standartButtom.btn-news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;   
+    margin: 0;
+} 
+.icon.icon-iconsend {
+    margin-left: 10px;
+}

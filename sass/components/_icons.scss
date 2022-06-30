@@ -1,0 +1,90 @@
+.icon {
+    fill: $main-icon-color;
+    @extend %fill;
+    }
+.advantages__icon {
+    position: relative;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: $section-background-color;
+}
+.icon-envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+.icon-smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+}
+.icon-client1 {
+    width: 41px;
+    height: 47px;
+}
+.icon-client2 {
+    width: 40px;
+    height: 52px;
+}
+.icon-client3 {
+    width: 44px;
+    height: 41px;
+}
+.icon-client4 {
+    width: 84px;
+    height: 41px;
+}
+.icon-client5 {
+    width: 63px;
+    height: 45px;
+}
+.icon-client6 {
+    width: 94px;
+    height: 44px;
+}
+.form-icon{
+    fill:$main-text-color;
+}
+.icon-man {
+    width: 12px;
+    height: 12px;
+}
+.icon-phone {
+    width: 13px;
+    height: 13px;
+}
+.icon-mail {
+    width: 15px;
+    height: 12px;
+}
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut {
+    width: 70px;
+    height: 70px;
+}
+.icon-instagram,
+.icon-twitter,
+.icon-facebook,
+.icon-linkedin {
+    width: 20px;
+    height: 20px;
+}
+.icon.icon-vector {
+    width: 11px;
+    height: 11px;
+    fill:$main-text-color;
+}
+.icon-iconsend {
+    width: 24px;
+    height: 24px;
+    fill: $primiry-color;
+}
+.icon-checkmark {
+    width: 11px;
+    height: 8px;
+    background: $activity-color;
+    border-radius: 2px; 
+}

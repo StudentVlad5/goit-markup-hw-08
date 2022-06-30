@@ -1,0 +1,120 @@
+.filter__title--do-not-show {
+    display: none;
+}
+.filter__container,
+.filter__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.filter-button {
+    padding: 6px 22px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    border: none;
+    border-radius: 4px;
+    color: $main-text-color;
+    background-color: $section-background-color;
+    @extend %background-color;
+    @extend %color;
+    @extend %box-shadow;
+    
+    &:hover, &:focus {
+        color: $primiry-color;
+        background-color: $activity-color;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+.poster__item {
+    flex-basis: calc(100%/3 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.filter__item:not(:last-child){
+    margin-right: 8px;
+    padding: 0;
+}
+.poster__project--style {
+    margin-top: -5px;
+    padding: 20px 24px;
+}
+p.poster__project--type {
+    margin: 0;
+    color:$secondary-text-color;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
+p.poster__project--name {
+    margin: 0 0 4px;
+    color: $main-text-color;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.poster__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+.poster__card {
+    width: 370px; 
+    border: 1px solid #EEEEEE;
+    margin: 0;
+    padding: 0;
+    @extend %box-shadow;
+
+    &:hover, &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+.poster__card--img {
+    position: relative;
+    overflow: hidden;
+}
+.poster__card--contant {
+    position: absolute;
+    display: flex;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.poster__card--contant-text {
+    padding: 63px 24px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    color:$primiry-color;
+    z-index: 9999;
+    @extend %transform;
+}
+.poster__card--img::after {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: $poster-background-color;
+    @extend %transform; 
+}
+.poster__link {
+    &:hover .poster__card--img::after,
+    &:focus .poster__card--img::after,
+    &:hover .poster__card--contant-text,
+    &:focus .poster__card--contant-text {
+        transform: translateY(-100%);
+        }
+}

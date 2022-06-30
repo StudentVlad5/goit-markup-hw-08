@@ -1,0 +1,86 @@
+body {
+    font-family: $primiry-font;
+    color: $main-text-color;
+    background-color: $primiry-color;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $primiry-color;
+}
+footer {
+    background-color: $footer-background-color;
+}
+button {
+    cursor: pointer;
+}
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.section--position {
+    margin: 0 auto;
+    padding: 94px 0;
+}
+.doing__list,
+.team__list,
+.clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+textarea {
+    resize: none;
+}
+input,
+textarea {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em; 
+    padding: 12px 16px;
+    border: 1px solid $input-border-color;
+    border-radius: 4px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em; 
+    color: $placeholder-color;
+    opacity: 1; /* Firefox */
+  }
+:-ms-input-placeholder,
+::-ms-input-placeholder
+{ /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em; 
+    color: $placeholder-color;
+  }
+.style-checkbox {
+    width: 16px;
+    height: 15px;
+    border: 1px solid $main-text-color;
+}
+input[type="checkbox"] {
+    background: $main-text-color;
+    border: 1px solid $checkbox-border-color;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+ }
+ img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+ }

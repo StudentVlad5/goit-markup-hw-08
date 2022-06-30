@@ -1,0 +1,33 @@
+.hero.section--position {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 200px 0;
+    background-image: 
+    linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+    url(../../images/main/main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid $checkbox-border-color;
+}
+.hero__title{
+    margin: 0 auto;
+}
+.standartButtom {
+    display: block;
+    margin: 50px auto 0;
+    padding: 0;
+    width: 200px;
+    height: 50px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $primiry-color;
+    background-color: $activity-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+}
