@@ -2,6 +2,14 @@
 .footer-container {
     margin: 0 auto;
 }
+.icon-menu_24px--close {
+    display: none;
+    
+}
+.menu-nav__container {
+    display: none;
+}
+
  .menu.main-nav {
     max-width: 1200px;
     margin: 0 auto;
@@ -22,6 +30,19 @@
 }
 .logo--color-activity {
     color: $activity-color;
+}
+.menu__btn--open {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: $primiry-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.main-nav.container {
+    justify-content: space-between;
+    padding: 0.625rem 0.94rem;
 }
 .main-nav,
 .menu-nav,
