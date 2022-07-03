@@ -1,11 +1,11 @@
 .list.clients__list {
-    margin: -15px;
+    justify-content: space-between;
+    margin-top: 15px;
 }
 .clients__item {
     display: flex;
-    justify-content: center;
-    flex-basis: (100%-30px)/2;
-    gap: 15px;
+    width: calc(50% - 30px);
+    margin-top: 15px;
 }
 .clients__link {
     width: 100%;
@@ -22,7 +22,7 @@
     border: 1px solid $main-icon-color;
     border-radius: 4px;
     @extend %background-color;
-}
+ }
 // .clients__link {
 //     &:hover .icon,
 //     &:focus .icon {

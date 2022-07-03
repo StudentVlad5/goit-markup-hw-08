@@ -4,6 +4,7 @@ body {
     background-color: $primiry-color;
     font-size: 1rem;    // 16px;
     width: 100%;
+    min-width: 16.8rem;
 }
 a {
     text-decoration: none;
@@ -40,7 +41,6 @@ button {
     letter-spacing: 0.03em;
 }
 .doing__list,
-.team__list,
 .clients__list {
     display: flex;
     flex-wrap: wrap;
@@ -87,8 +87,8 @@ input[type="checkbox"] {
 .container {
     margin: 0 auto;
     padding: 3.75rem 0.938rem;
-    @media screen and (min-width:30rem) {
-        width:30rem;
+    @media screen and (min-width: 480px) {
+        width: 480px;
     }
  }
  img {

@@ -1,6 +1,9 @@
 .team {
     background: $section-background-color;
 }
+.team__list {
+    margin-top: 30px;
+}
 .team__item {
     width: 100%;
 }
@@ -36,12 +39,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 1rem 7.625rem 0;
+    margin: -5px;
+    padding-top: 1rem;
+}
+.social__item {
+    margin: 5px;
 }
 .social__icon {
     position: relative;
     display: flex;
-    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     width: 2.75rem;
@@ -51,6 +57,7 @@
     @extend %background-color;
     @extend %animation;
     @extend %border-radius;
+
 }
 // .social__link {
 //     &:hover .icon,

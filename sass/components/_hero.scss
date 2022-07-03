@@ -13,6 +13,12 @@
 .hero__title{
     margin: 0 auto;
 }
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .hero--style {
     margin: 7.375rem 3.75rem;
 }
