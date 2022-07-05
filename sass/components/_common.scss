@@ -87,8 +87,8 @@ input[type="checkbox"] {
 .container {
     margin: 0 auto;
     padding: 3.75rem 0.938rem;
-    @media screen and (min-width: 480px) {
-        width: 480px;
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
     }
  }
  img {

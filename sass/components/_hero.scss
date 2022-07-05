@@ -1,15 +1,29 @@
 .hero.section--position {
     max-width: 100rem;
     margin: 0 auto;
-    // padding: 200px 0;
     background-image: 
     linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
-    url(../../images/main/main.jpg);
+    url(../../images/main/header_450_1x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border: 1px solid $checkbox-border-color;
 }
+@media screen and (min-resolution: 2dppx) {
+    .hero.section--position  {
+        background-image: 
+        linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+        url(../../images/main/header_450_2x.jpg);
+    } 
+    @media screen and (min-resolution: 3dppx) {
+        .hero.section--position  {
+            background-image: 
+            linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+            url(../../images/main/header_450_3x.jpg);
+        }   
+    }  
+}
+
 .hero__title{
     margin: 0 auto;
 }

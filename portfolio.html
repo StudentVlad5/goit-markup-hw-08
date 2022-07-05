@@ -18,22 +18,56 @@
     <!-- page of our projects -->
     <header class="page-header">
         <nav class="main-nav container">
-        <a class="logo" href="./index.html" rel="noreferrer nofollow noopener"><p><span class="logo--color-activity">Web</span>Studio</p></a>
+            <div class="menu-nav__container" data-menu>
             <ul class="menu-nav list">
-                <li class="menu-nav__item"><a class="menu-nav__link menu-nav__link--location" href="./index.html" rel="noreferrer nofollow noopener">Студия</a></li>
-                <li class="menu-nav__item"><a class="menu-nav__link menu-nav__link--location active" href="./portfolio.html" rel="noreferrer nofollow noopener">Портфолио</a></li>
+                <li class="menu-nav__item"><a class="menu-nav__link menu-nav__link--location active" href="./index.html" rel="noreferrer nofollow noopener">Студия</a></li>
+                <li class="menu-nav__item"><a class="menu-nav__link menu-nav__link--location" href="./portfolio.html" rel="noreferrer nofollow noopener">Портфолио</a></li>
                 <li class="menu-nav__item"><a class="menu-nav__link menu-nav__link--location" href="" rel="noreferrer nofollow noopener">Контакты</a></li>
             </ul>
-            <ul class="menu-nav--contact-position list">
-                <li class="menu-nav__item">
-                    <a class="menu-nav__link contact" href="mailto:info@devstudio.com">
-                        <svg class="icon icon-envelope"><use href="./images/icons/icon.svg#icon-envelope"></use></svg>
-                        info@devstudio.com</a></li>
-                <li class="menu-nav__item">
-                    <a class="menu-nav__link contact" href="tel:+380961111111">
-                        <svg class="icon icon-smartphone"><use href="./images/icons/icon.svg#icon-smartphone"></use></svg>
-                        +38 096 111 11 11</a></li>
-            </ul>
+            <div class="menu-nav__container--position">
+                <ul class="menu-nav--contact-position list">
+                    <li class="menu-nav__item">
+                        <a class="menu-nav__link contact phone-number" href="tel:+380961111111">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li class="menu-nav__item">
+                        <a class="menu-nav__link contact mail" href="mailto:info@devstudio.com">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+                <ul class="menu-nav__sochial list">
+                    <li class="menu-nav__sochial--networks">
+                        <a class="menu-nav__sochial--contact" href="">
+                            Instagram
+                        </a>
+                    </li>
+                    <li class="menu-nav__sochial--networks">
+                        <a class="menu-nav__sochial--contact" href="">
+                            Twitter
+                        </a>
+                    </li>
+                    <li class="menu-nav__sochial--networks">
+                        <a class="menu-nav__sochial--contact" href="">
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="menu-nav__sochial--networks">
+                        <a class="menu-nav__sochial--contact" href="">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </div>       
+        </div>
+        <a class="logo" href="./index.html" rel="noreferrer nofollow noopener"><p><span class="logo--color-activity">Web</span>Studio</p></a>
+        <button class="menu__btn" type="button" aria-label="Кнопка меню" data-menu-button>
+            <svg class="icon icon-menu_24px">
+                <use class="icon-menu--close" href="./images/icons/icon.svg#icon-vector"></use>
+                <use class="icon-menu--open" href="./images/icons/icon.svg#icon-menu_24px"></use>
+            </svg>
+        </button>
         </nav>
     </header>
     <main>
@@ -57,7 +91,7 @@
                                 <div class="poster__card--contant">
                                     <span class="poster__card--contant-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</span>
                                 </div>
-                                <img class="poster__project-img" src="images/projects/tehnocryak.jpg" alt="Постер проекта Технокряк" width="370">
+                                <img class="poster__project-img" src="images/projects/tehnocryak.jpg" alt="Постер проекта Технокряк">
                             </div>    
                                 <div class="poster__project--style">
                                     <p class="poster__project--name">Технокряк</p>
@@ -176,7 +210,7 @@
     </main>
     <footer>
         <div class="container footer-container">
-            <div class="footer__column1">
+            <div class="footer__column1 column">
                 <div class="footer__logo">
                         <a class="logo" href="./index.html" rel="noreferrer nofollow noopener"><p><span class="logo--color-activity">Web</span><span class="logo--color-primary">Studio</span></p></a>
                 </div>    
@@ -188,7 +222,7 @@
                     </ul>
                 </address>
             </div>
-            <div class="footer__column2">
+            <div class="footer__column2 column">
                 <h4 class="footer__title">присоединяйтесь</h4>
                 <ul class="footer__list--social list">
                     <li class="social__item">
@@ -229,7 +263,7 @@
                     </li>
                 </ul>                 
             </div>
-            <div class="footer__column3">
+            <div class="footer__column3 column">
                 <h4 class="footer__title">Подпишитесь на рассылку</h4>
                 <ul class="footer__list--mail list">
                     <li class="mail--submit">
@@ -244,5 +278,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/mobile-menu.js"></script>
 </body>
 </html>
