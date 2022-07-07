@@ -7,6 +7,33 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+@media (max-width: 767px) {
+    .poster__list {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin-top: -1.875rem;
+    }
+    .poster__item {
+        flex-basis: calc(100%/3 - 1.875rem);
+        margin-top: 1.875rem;
+    }
+}
+@media (min-width: 768px) {
+    .poster__list {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: left;
+        width: 100%;
+        margin-bottom: -30px;
+    }
+    .poster__item {
+        flex-basis: calc(50% - 15px);
+        margin-bottom: 30px;
+    }
+    .poster__item:nth-child(odd) {
+        margin-right: 30px;
+    }
+}
 .list.filter__list {
     justify-content: left;
     margin-top: -0.9375rem;
@@ -32,10 +59,6 @@
         background-color: $activity-color;
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     }
-}
-.poster__item {
-    flex-basis: calc(100%/3 - 1.875rem);
-    margin-top: 1.875rem;
 }
 .filter__item:not(:last-child){
     margin-right: 0.5rem;
@@ -65,12 +88,9 @@ p.poster__project--name {
 }
 .poster__list {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin-top: -1.875rem;
 }
 .poster__card {
+    height: 100%;
     width: 100%; 
     border: 1px solid #EEEEEE;
     margin: 0;

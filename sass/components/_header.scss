@@ -4,7 +4,7 @@
 .main-nav.container {
     display: flex;
     justify-content: space-between;
-    padding: 0.625rem 0.9375rem;
+    padding: 0 0.9375rem;
     background-color: $primiry-color;
 }
 @media (max-width: 767px) {
@@ -181,6 +181,7 @@
     .menu-nav__item .menu-nav__link.contact {
         padding-bottom: 0px;
         font-size: 0.875rem;
+        color: $secondary-text-color;
     }
     .menu-nav--contact-position.list > .menu-nav__item:first-of-type {
         margin-bottom: 10px;
