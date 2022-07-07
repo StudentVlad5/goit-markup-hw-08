@@ -1,11 +1,22 @@
 .list.clients__list {
-    justify-content: space-between;
-    margin-top: 0.9375rem;
-}
-.clients__item {
     display: flex;
-    width: calc(50% - 1.875rem);
+    justify-content: center;
     margin-top: 0.9375rem;
+    margin: 15px -15px -15px;
+}
+@media screen and (max-width:768px) {
+    .clients__item {
+        display: flex;
+        width: calc(50%);
+        padding: 15px;
+    }
+}
+@media screen and (min-width:$tablet) {
+    .clients__item {
+        display: flex;
+        width: calc(100%/3);
+        padding: 15px;
+    }
 }
 .clients__link {
     width: 100%;

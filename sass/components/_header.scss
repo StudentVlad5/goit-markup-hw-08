@@ -1,16 +1,19 @@
 .page-header {
     border-bottom: 1px solid $header-border-color;
 }
-.page-header,
-.footer-container {
-    margin: 0 auto;
-}
 .main-nav.container {
     display: flex;
     justify-content: space-between;
     padding: 0.625rem 0.9375rem;
     background-color: $primiry-color;
 }
+@media (max-width: 767px) {
+    .icon-envelope,
+    .icon-smartphone {
+    display: none;
+    }
+}
+@media (max-width: 768px) {
 .menu-nav__container {
     display: none;
     position: absolute;
@@ -27,11 +30,50 @@
         flex-direction: column;
         justify-content: space-between;
         z-index: 5;
-    }
+        }
     &.is-open ~ .menu__btn {
         position: fixed;
         right: 0.9375rem;
-       
+        }
+    }
+    .menu__btn {
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: $primiry-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        z-index: 9000;
+        &:hover .icon-menu_24px, &:focus .icon-menu_24px {
+            fill: $activity-color;
+        }
+    }
+    .menu__btn .icon-menu--close {
+        display: none;
+    }
+    .menu__btn.is-open .icon-menu--close {
+        display: block;
+    }
+    .menu__btn.is-open .icon-menu--open {
+        display: none;
+    }
+    .menu-nav__item {
+        text-align: left;
+    }
+    .menu-nav__sochial--networks {
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+    }
+    .menu-nav__sochial--networks:not(:last-of-type) {
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+    .menu-nav__item .menu-nav__link {
+    font-size: 2.5rem;
     }
 }
 .menu-nav.list,
@@ -56,37 +98,11 @@
 .logo--color-activity {
     color: $activity-color;
 }
-.menu__btn {
-    width: 2.5rem;
-    height: 2.5rem;
-    background-color: $primiry-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    z-index: 9000;
-    &:hover .icon-menu_24px, &:focus .icon-menu_24px {
-        fill: $activity-color;
-    }
-}
-.menu__btn .icon-menu--close {
-    display: none;
-}
-.menu__btn.is-open .icon-menu--close {
-    display: block;
-}
-.menu__btn.is-open .icon-menu--open {
-    display: none;
-}
-.menu-nav__item {
-    text-align: left;
-}
 .menu-nav__item .menu-nav__link {
     display: block;
     position: relative;
     padding-bottom: 2rem;
     font-weight: 500;
-    font-size: 2.5rem;
     line-height: 1.1;
     letter-spacing: 0.02em;
     color:$main-text-color;
@@ -95,17 +111,7 @@
         color: $activity-color;
     }
 }
-.menu-nav__sochial--networks {
-    display: flex;
-    flex-wrap: wrap;
-    font-weight: 500;
-    font-size: 1.125rem;
-    line-height: 1.22;
-    letter-spacing: 0.02em;
-}
-.menu-nav__sochial--networks:not(:last-of-type) {
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
-}
+
 .menu-nav__item > .menu-nav__link {
     &.active {
         color: $activity-color;
@@ -116,30 +122,120 @@
     font-weight: 500;
     letter-spacing: 0.02em;
 }
-.menu-nav__link.phone-number {
-    padding: 0;
-    font-size: 2.125rem;
-    line-height: 1.176;
-    color: $activity-color;
+@media (max-width: 767px) {
+    .menu-nav__link.phone-number {
+        padding: 0;
+        font-size: 2.125rem;
+        line-height: 1.176;
+        color: $activity-color;
+    }
+    .menu-nav__link.mail {
+        padding: 0;
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        line-height: 1.167;
+        color: $secondary-text-color;
+    }   
+    .menu-nav__sochial {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .menu-nav__sochial.list {
+        margin-left: -0.625rem;
+        margin-top: 4rem;
+    }
+    .menu-nav__sochial--networks {
+        padding: 0 0.625rem;
+    }
+    .menu-nav__sochial--contact {
+        color: $activity-color;
+    }
 }
-.menu-nav__link.mail {
-    padding: 0;
-    margin-top: 2rem;
-    font-size: 1.5rem;
-    line-height: 1.167;
-    color: $secondary-text-color;
-}
-.menu-nav__sochial {
-    display: flex;
-    flex-wrap: wrap;
-}
-.menu-nav__sochial.list {
-    margin-left: -0.625rem;
-    margin-top: 4rem;
-}
-.menu-nav__sochial--networks {
-    padding: 0 0.625rem;
-}
-.menu-nav__sochial--contact {
-    color: $activity-color;
+@media (min-width: 768px) {
+    .menu-nav__container {
+        width: calc(100% - 125px - 30px - (100% - 125px - 30px - 293px - 165px)/2);
+        position: relative;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main-nav.container {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu-nav.list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .menu__btn,
+    .menu-nav__sochial {
+        display: none;
+    }
+    .menu-nav > .menu-nav__item .menu-nav__link {
+        padding: 32px 0;
+        font-size: 0.875rem;
+        }
+    .menu-nav__item .menu-nav__link.contact {
+        padding-bottom: 0px;
+        font-size: 0.875rem;
+    }
+    .menu-nav--contact-position.list > .menu-nav__item:first-of-type {
+        margin-bottom: 10px;
+    }
+    .menu-nav__link.menu-nav__link--location {
+        &::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        content: "";
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+        border-bottom: 4px solid $activity-color;
+        border-radius: 2px;
+        transform: scaleX(0);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover, &:focus {
+                transform: scaleX(1);
+            }
+        }
+        .menu-nav__item > .menu-nav__link {
+            &.active::after {
+                transform: scaleX(1);
+            }
+            &.active {
+                color: $activity-color;
+            }
+            &:hover .icon-envelope,
+            &:focus .icon-envelope,
+            &:hover .icon-smartphone,
+            &:focus .icon-smartphone {
+                fill: $activity-color;
+            }
+        }
+    }
+    .menu-nav--contact-position.list {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-nav .menu-nav__item:not(:last-child) {
+            margin-right: 50px;
+        }
+    .menu-nav__item > .menu-nav__link {
+        &.active::after {
+            transform: scaleX(1);
+        }
+        &.active {
+            color: $activity-color;
+        }
+        &:hover .icon-envelope,
+        &:focus .icon-envelope,
+        &:hover .icon-smartphone,
+        &:focus .icon-smartphone {
+            fill: $activity-color;
+        }
+    }
 }

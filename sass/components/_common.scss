@@ -4,7 +4,17 @@ body {
     background-color: $primiry-color;
     font-size: 1rem;    // 16px;
     width: 100%;
-    min-width: 16.8rem;
+    margin: 0 auto;
+    // min-width: 16.8rem;
+    @media screen and (max-width: 767px) {
+        min-width: $mobile;
+    }
+        @media screen and (min-width: $tablet) {
+            max-width: $tablet;
+        }
+        @media screen and (min-width: $desctop) {
+            min-width: $desctop;
+        }
 }
 a {
     text-decoration: none;
@@ -23,6 +33,10 @@ footer {
 }
 button {
     cursor: pointer;
+}
+.page-header,
+.footer-container {
+    margin: 0 auto;
 }
 .list {
     margin: 0;
@@ -87,9 +101,15 @@ input[type="checkbox"] {
 .container {
     margin: 0 auto;
     padding: 3.75rem 0.938rem;
-    @media screen and (min-width: $mobile) {
-        width: $mobile;
+    @media screen and (max-width: 767px) {
+        min-width: $mobile;
     }
+        @media screen and (min-width: $tablet) {
+            max-width: $tablet;
+        }
+        @media screen and (min-width: $desctop) {
+            min-width: $desctop;
+        }
  }
  img {
     display: block;

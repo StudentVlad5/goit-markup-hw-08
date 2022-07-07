@@ -1,17 +1,31 @@
 .team {
     background: $section-background-color;
 }
-.team__list {
-    margin-top: 30px;
+@media screen and (max-width: 768px) {
+    .team__item {
+        width: 100%;
+    } 
+    .team__item:not(:last-child) {
+        margin-bottom: 1.875rem;
+    }
+    .team__list {
+        margin-top: 30px;
+    }
 }
-.team__item {
-    width: 100%;
+@media screen and (min-width: $tablet) {
+    .team__item {
+        width: calc(50% - 30px);
+        padding: 15px;
+    } 
+    .team__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 15px -15px -15px;
+    }
 }
 .team__card--style {
     padding: 1.875rem 0 1.5rem;
-}
-.team__item:not(:last-child) {
-    margin-bottom: 1.875rem;
 }
 .team--member {
     margin: 0;

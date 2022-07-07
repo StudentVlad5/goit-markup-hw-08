@@ -3,16 +3,28 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-.column {
-    text-align: center;
-    width: 100%;
-    @media screen and (min-width:$mobile) {
-        width: $mobile;
+@media screen and (max-width:767px) {
+    .column {
+        text-align: center;
+        width: 100%;
+    }
+    .footer__column2,
+    .footer__column3 {
+        margin-top: 3.75rem;
     }
 }
-.footer__column2,
-.footer__column3 {
-    margin-top: 3.75rem;
+@media screen and (min-width:768px) {
+    .column {
+        text-align: center;
+    }
+    .footer__tablet--container {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .footer__column3 {
+        margin-top: 3.75rem;
+    }
 }
 
 .footer__logo {
@@ -63,6 +75,7 @@
 }
 .footer__column3 {
     margin-left: auto;
+    margin-right: auto;
     justify-content: center;
     align-items: center;
 }
