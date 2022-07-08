@@ -1050,6 +1050,10 @@ img {
     fill: #2196F3;
   }
 }
+.menu-nav__item .menu-nav__link:hover, .menu-nav__item .menu-nav__link:focus {
+  color: #2196F3;
+}
+
 .hero.section--position {
   max-width: 100rem;
   margin: 0 auto;

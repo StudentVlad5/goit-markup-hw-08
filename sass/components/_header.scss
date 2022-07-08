@@ -337,3 +337,9 @@
         }
     }
 }
+.menu-nav__item .menu-nav__link {
+    @extend %transform;
+    &:hover, &:focus {
+        color: $activity-color;
+    }
+}
