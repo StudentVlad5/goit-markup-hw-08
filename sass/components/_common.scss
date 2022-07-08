@@ -9,12 +9,12 @@ body {
     @media screen and (max-width: 767px) {
         min-width: $mobile;
     }
-        @media screen and (min-width: $tablet) {
-            max-width: $tablet;
-        }
-        @media screen and (min-width: $desctop) {
-            min-width: $desctop;
-        }
+    @media screen and (min-width: $tablet) and (max-width: 1599px) {
+        max-width: $tablet;
+    }
+    @media screen and (min-width: $desctop) {
+        min-width: $desctop;
+    }
 }
 a {
     text-decoration: none;
@@ -104,11 +104,11 @@ input[type="checkbox"] {
     @media screen and (max-width: 767px) {
         min-width: $mobile;
     }
-        @media screen and (min-width: $tablet) {
+        @media screen and (min-width: $tablet) and (max-width: 1599px) {
             max-width: $tablet;
         }
         @media screen and (min-width: $desctop) {
-            min-width: $desctop;
+            max-width: 1200px;
         }
  }
  img {

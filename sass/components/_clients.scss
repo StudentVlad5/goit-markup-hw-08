@@ -11,10 +11,17 @@
         padding: 15px;
     }
 }
-@media screen and (min-width:$tablet) {
+@media screen and (min-width:$tablet) and (max-width:1599px) {
     .clients__item {
         display: flex;
         width: calc(100%/3);
+        padding: 15px;
+    }
+}
+@media screen and (min-width:$desctop) {
+    .clients__item {
+        display: flex;
+        width: calc(100%/6);
         padding: 15px;
     }
 }

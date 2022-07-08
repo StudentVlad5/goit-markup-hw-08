@@ -12,8 +12,20 @@
     .footer__column3 {
         margin-top: 3.75rem;
     }
+    .email-for-news {
+        width: 100%;
+        margin-bottom: 1.25rem;
+    }
+    .footer__column3 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer__list--mail,
+    .mail--submit {
+    justify-content: center;
 }
-@media screen and (min-width:768px) {
+}
+@media screen and (min-width:$tablet) and (max-width: 1599px) {
     .column {
         text-align: center;
     }
@@ -24,6 +36,53 @@
     }
     .footer__column3 {
         margin-top: 3.75rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .email-for-news {
+        width: 100%;
+        margin-bottom: 1.25rem;
+    }
+    .footer__list--mail,
+    .mail--submit {
+    justify-content: center;
+}
+}
+@media screen and (min-width: $desctop) {
+    .container.footer-container {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .column {
+        text-align: center;
+    }
+    .footer__tablet--container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .footer__column2 {
+        padding-left: 70px;
+    }
+    .social__item {
+        flex-basis: calc((100% / 4) - 30px);
+    }
+    .social__item:not(:last-child) {
+        margin-right: 10px;
+    }
+    .email-for-news {
+        width: 358px;
+    }
+    .footer__column3 {
+        width: 100%;
+        text-align: left;
+    } 
+    .footer__list--mail {
+        width: 570px;
+    }
+    .mail--submit {
+        width: 100%;
+        justify-content: space-between;
     }
 }
 
@@ -73,23 +132,17 @@
 .icon.icon-footer {
     fill: $primiry-color;
 }
-.footer__column3 {
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: center;
-}
 .footer__list--mail,
 .mail--submit {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+}
+.footer__list--mail {
+    justify-content: center;
 }
 .email-for-news {
     padding: 0.9375rem 1rem;
-    width: 100%;
-    margin-bottom: 1.25rem;
     font-size: 1rem;
     line-height: 1.25;
     letter-spacing: 0.03em;

@@ -123,6 +123,10 @@
     letter-spacing: 0.02em;
 }
 @media (max-width: 767px) {
+    .main-nav.container {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
     .menu-nav__link.phone-number {
         padding: 0;
         font-size: 2.125rem;
@@ -151,7 +155,100 @@
         color: $activity-color;
     }
 }
-@media (min-width: 768px) {
+@media (min-width: $desctop) {
+    .menu-nav__container {
+        width: 100%;
+        position: relative;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main-nav.container {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu-nav.list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .menu__btn,
+    .menu-nav__sochial {
+        display: none;
+    }
+    .menu-nav > .menu-nav__item .menu-nav__link {
+        padding: 32px 0;
+        font-size: 0.875rem;
+        }
+    .menu-nav__item .menu-nav__link.contact {
+        padding-bottom: 0px;
+        font-size: 0.875rem;
+        color: $secondary-text-color;
+    }
+    .menu-nav__link.menu-nav__link--location {
+        &::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        content: "";
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+        border-bottom: 4px solid $activity-color;
+        border-radius: 2px;
+        transform: scaleX(0);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover, &:focus {
+                transform: scaleX(1);
+            }
+        }
+        .menu-nav__item > .menu-nav__link {
+            &.active::after {
+                transform: scaleX(1);
+            }
+            &.active {
+                color: $activity-color;
+            }
+            &:hover .icon-envelope,
+            &:focus .icon-envelope,
+            &:hover .icon-smartphone,
+            &:focus .icon-smartphone {
+                fill: $activity-color;
+            }
+        }
+    }
+    .menu-nav--contact-position {
+        margin-left: auto;
+    }
+    .menu-nav {
+        margin-left: 93px;
+    }
+    .menu-nav--contact-position.list {
+        display: flex;
+        flex-direction: row;
+    }
+    .menu-nav .menu-nav__item:not(:last-child),
+    .menu-nav--contact-position .menu-nav__item:not(:last-child) {
+        margin-right: 50px;
+    }
+    .menu-nav__item > .menu-nav__link {
+        &.active::after {
+            transform: scaleX(1);
+        }
+        &.active {
+            color: $activity-color;
+        }
+        &:hover .icon-envelope,
+        &:focus .icon-envelope,
+        &:hover .icon-smartphone,
+        &:focus .icon-smartphone {
+            fill: $activity-color;
+        }
+    }
+}
+@media (min-width: $tablet) and (max-width: 1600px) {
     .menu-nav__container {
         width: calc(100% - 125px - 30px - (100% - 125px - 30px - 293px - 165px)/2);
         position: relative;
