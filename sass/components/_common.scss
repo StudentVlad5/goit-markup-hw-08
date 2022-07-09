@@ -6,14 +6,14 @@ body {
     width: 100%;
     margin: 0 auto;
     // min-width: 16.8rem;
-    @media screen and (max-width: 767px) {
-        min-width: $mobile;
-    }
-    @media screen and (min-width: $tablet) and (max-width: 1599px) {
+    @media screen and (min-width: $tablet) and (max-width: $desctop) {
         max-width: $tablet;
     }
     @media screen and (min-width: $desctop) {
         min-width: $desctop;
+    }
+    @media screen and (max-width: $tablet_one) {
+        min-width: $mobile;
     }
 }
 a {
@@ -101,16 +101,16 @@ input[type="checkbox"] {
 .container {
     margin: 0 auto;
     padding: 3.75rem 0.938rem;
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: $tablet) and (max-width: $desctop) {
+        max-width: $tablet;
+    }
+    @media screen and (max-width: $tablet_one) {
         min-width: $mobile;
     }
-        @media screen and (min-width: $tablet) and (max-width: 1599px) {
-            max-width: $tablet;
-        }
-        @media screen and (min-width: $desctop) {
-            max-width: 1200px;
-        }
- }
+    @media screen and (min-width: $desctop) {
+        max-width: 1200px;
+    }
+}
  img {
     display: block;
     max-width: 100%;

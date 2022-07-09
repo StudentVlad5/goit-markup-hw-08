@@ -1,13 +1,20 @@
-.filter__title--do-not-show {
-    display: none;
+@media (min-width: $tablet) and (max-width: $desctop) {
+    .poster__list {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: left;
+        width: 100%;
+        margin-bottom: -30px;
+    }
+    .poster__item {
+        flex-basis: calc(50% - 15px);
+        margin-bottom: 30px;
+    }
+    .poster__item:nth-child(odd) {
+        margin-right: 30px;
+    }
 }
-.filter__container,
-.filter__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-@media (max-width: 767px) {
+@media (max-width: $tablet_one) {
     .poster__list {
         width: 100%;
         flex-wrap: nowrap;
@@ -19,9 +26,10 @@
     }
 }
 @media (min-width: $desctop) {
-    .filter__container,
-        .filter__list {
-        margin-bottom: 50px;
+
+    .poster__list > .poster__item {
+        margin-right: 0;
+        margin-bottom: 0;
     }
     .poster__item {
         flex-basis: calc(100%/3 - 30px);
@@ -37,26 +45,21 @@
         justify-content: center;
         margin-top: -30px;
         margin-left: -30px;
+        margin-bottom: 0;
+        width: auto;
     }
     .poster__item .poster__card {
         width: 370px; 
     }
 }
-@media (min-width: 768px) and (max-width: 1599px) {
-    .poster__list {
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: left;
-        width: 100%;
-        margin-bottom: -30px;
-    }
-    .poster__item {
-        flex-basis: calc(50% - 15px);
-        margin-bottom: 30px;
-    }
-    .poster__item:nth-child(odd) {
-        margin-right: 30px;
-    }
+.filter__title--do-not-show {
+    display: none;
+}
+.filter__container,
+.filter__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .list.filter__list {
     justify-content: left;
@@ -141,16 +144,20 @@ p.poster__project--name {
     height: 100%;
     justify-content: center;
     align-items: center;
+    z-index: 10;
 }
 .poster__card--contant-text {
-    padding: 3.9375rem 1.5rem;
-    text-align: center;
-    font-size: 1.125rem;
-    line-height: 1.6;
+    display: block;
+    position: relative;
+    transform: translateY(100%);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-align: left; 
+    font-size: 18px;
+    line-height: 1.56;
     letter-spacing: 0.03em;
     color:$primiry-color;
-    z-index: 9999;
-    @extend %transform;
+    @extend %transform; 
 }
 .poster__card--img::after {
     position: absolute;
@@ -166,8 +173,12 @@ p.poster__project--name {
 .poster__link {
     &:hover .poster__card--img::after,
     &:focus .poster__card--img::after,
-    &:hover .poster__card--contant-text,
-    &:focus .poster__card--contant-text {
+    &:hover .poster__card--contant,
+    &:focus .poster__card--contant {
         transform: translateY(-100%);
+        }
+        &:hover .poster__card--contant-text,
+        &:focus .poster__card--contant-text {
+            transform: translateY(0%);
         }
 }

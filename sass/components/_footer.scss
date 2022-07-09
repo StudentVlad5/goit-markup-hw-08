@@ -1,9 +1,7 @@
-.container.footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-@media screen and (max-width:767px) {
+@media screen and (max-width: $tablet_one) {
+    .container.footer-container {
+        flex-wrap: wrap;
+    }
     .column {
         text-align: center;
         width: 100%;
@@ -25,9 +23,12 @@
     justify-content: center;
 }
 }
-@media screen and (min-width:$tablet) and (max-width: 1599px) {
+@media screen and (min-width:$tablet) and (max-width: $desctop) {
     .column {
         text-align: center;
+    }
+    .container.footer-container {
+        flex-wrap: wrap;
     }
     .footer__tablet--container {
         display: flex;
@@ -38,6 +39,7 @@
         margin-top: 3.75rem;
         margin-left: auto;
         margin-right: auto;
+        width: 450px;
     }
     .email-for-news {
         width: 100%;
@@ -52,13 +54,16 @@
     .container.footer-container {
         display: flex;
         flex-wrap: nowrap;
+        width: auto;
     }
     .column {
-        text-align: center;
+        text-align: left;
     }
     .footer__tablet--container {
         display: flex;
         flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: left;
         width: 100%;
     }
     .footer__column2 {
@@ -72,10 +77,12 @@
     }
     .email-for-news {
         width: 358px;
+        margin-bottom: 0;
     }
     .footer__column3 {
         width: 100%;
         text-align: left;
+        margin-top: 0;
     } 
     .footer__list--mail {
         width: 570px;
@@ -85,7 +92,10 @@
         justify-content: space-between;
     }
 }
-
+.container.footer-container {
+    display: flex;
+    justify-content: center;
+}
 .footer__logo {
     margin: 0 0 1.25rem;
 }
@@ -136,6 +146,7 @@
 .mail--submit {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     align-items: center;
 }
 .footer__list--mail {

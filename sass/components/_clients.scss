@@ -1,17 +1,11 @@
-.list.clients__list {
-    display: flex;
-    justify-content: center;
-    margin-top: 0.9375rem;
-    margin: 15px -15px -15px;
-}
-@media screen and (max-width:768px) {
+@media screen and (max-width:$tablet_one) {
     .clients__item {
         display: flex;
         width: calc(50%);
         padding: 15px;
     }
 }
-@media screen and (min-width:$tablet) and (max-width:1599px) {
+@media screen and (min-width:$tablet) and (max-width:$desctop) {
     .clients__item {
         display: flex;
         width: calc(100%/3);
@@ -24,6 +18,12 @@
         width: calc(100%/6);
         padding: 15px;
     }
+}
+.list.clients__list {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.9375rem;
+    margin: 15px -15px -15px;
 }
 .clients__link {
     width: 100%;
