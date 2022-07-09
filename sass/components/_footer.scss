@@ -1,4 +1,4 @@
-@media screen and (max-width: $tablet_one) {
+@media screen and (max-width: $tablet) {
     .container.footer-container {
         flex-wrap: wrap;
     }
@@ -39,7 +39,7 @@
         margin-top: 3.75rem;
         margin-left: auto;
         margin-right: auto;
-        width: 450px;
+        width: 28.125rem;
     }
     .email-for-news {
         width: 100%;
@@ -67,16 +67,16 @@
         width: 100%;
     }
     .footer__column2 {
-        padding-left: 70px;
+        padding-left: 5.8333rem;
     }
     .social__item {
-        flex-basis: calc((100% / 4) - 30px);
+        flex-basis: calc((100% / 4) - 1.875rem);
     }
     .social__item:not(:last-child) {
-        margin-right: 10px;
+        margin-right: 0.625rem;
     }
     .email-for-news {
-        width: 358px;
+        width: 22.375rem;
         margin-bottom: 0;
     }
     .footer__column3 {
@@ -85,7 +85,7 @@
         margin-top: 0;
     } 
     .footer__list--mail {
-        width: 570px;
+        width: 35.625rem;
     }
     .mail--submit {
         width: 100%;
@@ -157,8 +157,8 @@
     font-size: 1rem;
     line-height: 1.25;
     letter-spacing: 0.03em;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border: 0.0625rem solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.15));
     color: $primiry-color;
     background-color: $footer-background-color;
 }

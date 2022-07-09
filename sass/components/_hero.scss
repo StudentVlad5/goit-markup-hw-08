@@ -1,4 +1,4 @@
-@media screen and (max-width: $tablet_one) {
+@media screen and (max-width: $tablet) {
     .hero.section--position {
         background-image: 
         linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
@@ -67,7 +67,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border: 1px solid $checkbox-border-color;
+    border: 0.0625rem solid $checkbox-border-color;
 }
 .hero__title{
     margin: 0 auto;
@@ -83,7 +83,7 @@
 }
 .standartButtom {
     display: block;
-    margin: 30px auto 0;
+    margin: 1.875rem auto 0;
     padding: 0;
     width: 12.5rem;
     height: 3.125rem;
@@ -95,7 +95,7 @@
     letter-spacing: 0.06em;
     color: $primiry-color;
     background-color: $activity-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+    box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
     border: none;
 }

@@ -1,4 +1,4 @@
-@media (max-width: $tablet_one) {
+@media (max-width: $tablet) {
     .icon-envelope,
     .icon-smartphone {
         display: none;
@@ -27,13 +27,13 @@
     &.is-open ~ .menu__btn {
         position: fixed;
         right: 0.9375rem;
-        top: 3px
+        top: 0.1875rem
         }
     }
     .menu__btn {
         width: 2.5rem;
         height: 2.5rem;
-        margin: 10px 0;
+        margin: 0.625rem 0;
         background-color: $primiry-color;
         display: flex;
         justify-content: center;
@@ -65,14 +65,14 @@
         letter-spacing: 0.02em;
     }
     .menu-nav__sochial--networks:not(:last-of-type) {
-        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        border-right: 0.0625rem solid rgba(33, 33, 33, 0.2);
     }
     .menu-nav__item .menu-nav__link {
     font-size: 2.5rem;
     }
     .main-nav.container {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
         flex-direction: row;
     }
     .menu-nav__link.phone-number {
@@ -109,7 +109,7 @@
         display: inline-flex;
         }
     .menu-nav__container {
-        width: calc(100% - 125px - 30px - (100% - 125px - 30px - 293px - 165px)/2);
+        width: calc(100% - 7.8125rem - 1.875rem - (100% - 7.8125rem - 1.875rem - 18.3125rem - 10.3125rem)/2);
         position: relative;
         padding: 0;
         display: flex;
@@ -131,16 +131,16 @@
         display: none;
     }
     .menu-nav > .menu-nav__item .menu-nav__link {
-        padding: 32px 0;
+        padding: 2rem 0;
         font-size: 0.875rem;
         }
     .menu-nav__item .menu-nav__link.contact {
-        padding-bottom: 0px;
+        padding-bottom: 0rem;
         font-size: 0.875rem;
         color: $secondary-text-color;
     }
     .menu-nav--contact-position.list > .menu-nav__item:first-of-type {
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
     }
     .menu-nav__link.menu-nav__link--location {
         &::after {
@@ -151,8 +151,8 @@
         bottom: 0;
         margin: 0;
         padding: 0;
-        border-bottom: 4px solid $activity-color;
-        border-radius: 2px;
+        border-bottom: 0.25rem solid $activity-color;
+        border-radius: 0.125rem;
         transform: scaleX(0);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
             &:hover, &:focus {
@@ -179,7 +179,7 @@
         flex-direction: column;
     }
     .menu-nav .menu-nav__item:not(:last-child) {
-            margin-right: 50px;
+            margin-right: 3.125rem;
         }
     .menu-nav__item > .menu-nav__link {
         &.active::after {
@@ -223,11 +223,11 @@
         display: none;
     }
     .menu-nav > .menu-nav__item .menu-nav__link {
-        padding: 32px 0;
+        padding: 2rem 0;
         font-size: 0.875rem;
         }
     .menu-nav__item .menu-nav__link.contact {
-        padding-bottom: 0px;
+        padding-bottom: 0rem;
         font-size: 0.875rem;
         color: $secondary-text-color;
     }
@@ -240,8 +240,8 @@
         bottom: 0;
         margin: 0;
         padding: 0;
-        border-bottom: 4px solid $activity-color;
-        border-radius: 2px;
+        border-bottom: 0.25rem solid $activity-color;
+        border-radius: 0.125rem;
         transform: scaleX(0);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
             &:hover, &:focus {
@@ -267,7 +267,7 @@
         margin-left: auto;
     }
     .menu-nav {
-        margin-left: 93px;
+        margin-left: 5.8125rem;
     }
     .menu-nav--contact-position.list {
         display: flex;
@@ -275,7 +275,7 @@
     }
     .menu-nav .menu-nav__item:not(:last-child),
     .menu-nav--contact-position .menu-nav__item:not(:last-child) {
-        margin-right: 50px;
+        margin-right: 3.125rem;
     }
     .menu-nav__item > .menu-nav__link {
         &.active::after {
@@ -293,7 +293,7 @@
     }
 }
 .page-header {
-    border-bottom: 1px solid $header-border-color;
+    border-bottom: 0.0625rem solid $header-border-color;
 }
 .main-nav.container {
     display: flex;
@@ -313,7 +313,7 @@
     margin: 0;
     font-family: $secondary-font;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 1.625rem;
     line-height: 1.2;
     letter-spacing: 0.03em;
 }

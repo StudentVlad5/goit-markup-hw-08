@@ -1,5 +1,5 @@
 
-@media screen and (max-width: $tablet_one) {
+@media screen and (max-width: $tablet) {
     .team__item {
         width: 100%;
     } 
@@ -7,7 +7,7 @@
         margin-bottom: 1.875rem;
     }
     .team__list {
-        margin-top: 30px;
+        margin-top: 1.875rem;
     }
     .team__card--style {
         padding: 1.875rem 0 1.5rem;
@@ -15,8 +15,8 @@
 }
 @media screen and (min-width: $tablet) and (max-width: $desctop) {
     .team__item {
-        width: calc(50% - 30px);
-        padding: 15px;
+        width: calc(50% - 1.875rem);
+        padding: 0.9375rem;
         margin: 0;
     } 
     .team__item:not(:last-child) {
@@ -26,7 +26,7 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin: 15px -15px -15px;
+        margin: 0.9375rem -0.9375rem -0.9375rem;
     }
     .team__card--style {
         padding: 1.875rem 0 1.5rem;
@@ -39,7 +39,7 @@
 }
 @media screen and (min-width: $desctop) {
     .team__item {
-        width: 270px;
+        width: 16.875rem;
         padding: 0;
     }
     .team__list {
@@ -49,17 +49,18 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        margin-top: 50px;
+        margin-top: 3.125rem;
+        justify-content: center;
     }
     .team__list .item:not(:nth-child(4n)) {
-        margin-right: 30px;
+        margin-right: 1.875rem;
     }
     .team__card--style {
-        padding: 30px 0;
-        margin-top: -5px;
+        padding: 1.875rem 0;
+        margin-top: -0.3125rem;
     }
     .team__card {
-        width: 270px;
+        width: 16.875rem;
     }
 }
 .team {
@@ -84,8 +85,8 @@
 }
 .team__card {
     background-color: #fff;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0rem 0.0625rem 0.1875rem rgba(0, 0, 0, 0.12), 0rem 0.0625rem 0.0625rem rgba(0, 0, 0, 0.14), 0rem 0.125rem 0.0625rem rgba(0, 0, 0, 0.2);
+    border-radius: 0rem 0rem 0.25rem 0.25rem;
 }
 .team__card > img {
     width: 100%;
@@ -94,11 +95,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: -5px;
+    margin: -0.3125rem;
     padding-top: 1rem;
 }
 .social__item {
-    margin: 5px;
+    margin: 0.3125rem;
 }
 .social__icon {
     position: relative;
