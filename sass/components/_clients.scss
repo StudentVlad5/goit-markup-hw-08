@@ -2,28 +2,28 @@
     .clients__item {
         display: flex;
         width: calc(50%);
-        padding: 0.9375rem;
+        padding: 15px;
     }
 }
 @media screen and (min-width:$tablet) and (max-width:$desctop) {
     .clients__item {
         display: flex;
         width: calc(100%/3);
-        padding: 0.9375rem;
+        padding: 15px;
     }
 }
 @media screen and (min-width:$desctop) {
     .clients__item {
         display: flex;
         width: calc(100%/6);
-        padding: 0.9375rem;
+        padding: 15px;
     }
 }
 .list.clients__list {
     display: flex;
     justify-content: center;
-    margin-top: 0.9375rem;
-    margin: 0.9375rem -0.9375rem -0.9375rem;
+    margin-top: 15px;
+    margin: 15px -15px -15px;
 }
 .clients__link {
     width: 100%;
@@ -35,10 +35,10 @@
     align-items: center;
     position: relative;
     width: 100%;
-    height: 5.75rem;
+    height: 92px;
     text-align: center;
-    border: 0.0625rem solid $main-icon-color;
-    border-radius: 0.25rem;
+    border: 1px solid $main-icon-color;
+    border-radius: 4px;
     @extend %background-color;
  }
 .clients__link {

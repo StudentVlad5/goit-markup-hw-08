@@ -62,12 +62,12 @@
     }
 }
 .hero.section--position {
-    max-width: 100rem;
+    max-width: 1600px;
     margin: 0 auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border: 0.0625rem solid $checkbox-border-color;
+    border: 1px solid $checkbox-border-color;
 }
 .hero__title{
     margin: 0 auto;
@@ -79,23 +79,23 @@
     align-items: center;
 }
 .hero--style {
-    margin: 7.375rem 3.75rem;
+    margin: 118px 60px;
 }
 .standartButtom {
     display: block;
-    margin: 1.875rem auto 0;
+    margin: 30px auto 0;
     padding: 0;
-    width: 12.5rem;
-    height: 3.125rem;
+    width: 200px;
+    height: 50px;
     font-family: inherit;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.88;
     text-align: center;
     letter-spacing: 0.06em;
     color: $primiry-color;
     background-color: $activity-color;
-    box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.15);
-    border-radius: 0.25rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
     border: none;
 }

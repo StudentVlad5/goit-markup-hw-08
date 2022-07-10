@@ -2,10 +2,9 @@ body {
     font-family: $primiry-font;
     color: $main-text-color;
     background-color: $primiry-color;
-    font-size: 1rem;    // 16px;
+    font-size: 16px;    // 16px;
     width: 100%;
     margin: 0 auto;
-    // min-width: 16.8rem;
     @media screen and (min-width: $tablet) and (max-width: $desctop) {
         max-width: $tablet;
     }
@@ -21,7 +20,7 @@ a {
 }
 h1 {
     font-weight: 900;
-    font-size: 1.63rem;
+    font-size: 26px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
@@ -49,7 +48,7 @@ button {
 .section__title {
     margin: 0 auto;
     font-weight: 700;
-    font-size: 1.75rem;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
@@ -59,23 +58,22 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 1.875rem;
-    // margin-top: 3.125rem;
+    margin-top: 30px;
 }
 textarea {
     resize: none;
 }
 input,
 textarea {
-    font-size: 0.75rem;
+    font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em; 
-    padding: 0.75rem 1rem;
-    border: 0.0625rem solid $input-border-color;
-    border-radius: 0.25rem;
+    padding: 12px 16px;
+    border: 1px solid $input-border-color;
+    border-radius: 4px;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    font-size: 0.75rem;
+    font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em; 
     color: $placeholder-color;
@@ -84,23 +82,23 @@ textarea {
 :-ms-input-placeholder,
 ::-ms-input-placeholder
 { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    font-size: 0.75rem;
+    font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em; 
     color: $placeholder-color;
   }
 .style-checkbox {
-    width: 1rem;
-    height: 0.9375rem;
-    border: 0.0625rem solid $main-text-color;
+    width: 16px;
+    height: 15px;
+    border: 1px solid $main-text-color;
 }
 input[type="checkbox"] {
     background: $main-text-color;
-    border: 0.0625rem solid $checkbox-border-color;
+    border: 1px solid $checkbox-border-color;
 }
 .container {
     margin: 0 auto;
-    padding: 3.75rem 0.938rem;
+    padding: 60px 15px;
     @media screen and (min-width: $tablet) and (max-width: $desctop) {
         max-width: $tablet;
     }

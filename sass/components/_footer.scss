@@ -8,11 +8,11 @@
     }
     .footer__column2,
     .footer__column3 {
-        margin-top: 3.75rem;
+        margin-top: 60px;
     }
     .email-for-news {
         width: 100%;
-        margin-bottom: 1.25rem;
+        margin-bottom: 20px;
     }
     .footer__column3 {
         margin-left: auto;
@@ -36,14 +36,14 @@
         width: 100%;
     }
     .footer__column3 {
-        margin-top: 3.75rem;
+        margin-top: 60px;
         margin-left: auto;
         margin-right: auto;
-        width: 28.125rem;
+        width: 450px;
     }
     .email-for-news {
         width: 100%;
-        margin-bottom: 1.25rem;
+        margin-bottom: 20px;
     }
     .footer__list--mail,
     .mail--submit {
@@ -67,16 +67,16 @@
         width: 100%;
     }
     .footer__column2 {
-        padding-left: 5.8333rem;
+        padding-left: 93px;
     }
     .social__item {
-        flex-basis: calc((100% / 4) - 1.875rem);
+        flex-basis: calc((100% / 4) - 30px);
     }
     .social__item:not(:last-child) {
-        margin-right: 0.625rem;
+        margin-right: 10px;
     }
     .email-for-news {
-        width: 22.375rem;
+        width: 358px;
         margin-bottom: 0;
     }
     .footer__column3 {
@@ -85,7 +85,7 @@
         margin-top: 0;
     } 
     .footer__list--mail {
-        width: 35.625rem;
+        width: 570px;
     }
     .mail--submit {
         width: 100%;
@@ -97,12 +97,12 @@
     justify-content: center;
 }
 .footer__logo {
-    margin: 0 0 1.25rem;
+    margin: 0 0 20px;
 }
 .post-address {
     color: $primiry-color;
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
@@ -112,21 +112,21 @@
 .contact.contact-item {
     display: block;
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     font-weight: 400;
     color: $secondary-footer-text-color;
 }
 .footer__item:not(:last-child) {
-    margin-bottom: 0.5625rem;
+    margin-bottom: 9px;
 }
 .footer__item.link {
-    padding-top: 0.625rem;
+    padding-top: 10px;
 }
 .footer__title {
     font-weight: 700;
-    font-size: 0.875rem;
+    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -137,7 +137,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: -0.3125rem;
+    margin: -5px;
 }
 .icon.icon-footer {
     fill: $primiry-color;
@@ -153,17 +153,17 @@
     justify-content: center;
 }
 .email-for-news {
-    padding: 0.9375rem 1rem;
-    font-size: 1rem;
+    padding: 15px 16px;
+    font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
-    border: 0.0625rem solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.15));
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     color: $primiry-color;
     background-color: $footer-background-color;
 }
 .email-for-news::placeholder {
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: $secondary-footer-text-color;
@@ -176,5 +176,5 @@
     margin: 0;
 } 
 .icon.icon-iconsend {
-    margin-left: 0.625rem;
+    margin-left: 10px;
 }

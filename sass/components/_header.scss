@@ -14,7 +14,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        padding: 3rem 2.5rem; 
+        padding: 48px 40px; 
         background-color: $primiry-color;
         text-align: left;
     &.is-open {
@@ -26,14 +26,14 @@
         }
     &.is-open ~ .menu__btn {
         position: fixed;
-        right: 0.9375rem;
-        top: 0.1875rem
+        right: 15px;
+        top: 3px
         }
     }
     .menu__btn {
-        width: 2.5rem;
-        height: 2.5rem;
-        margin: 0.625rem 0;
+        width: 40px;
+        height: 40px;
+        margin: 10px 0;
         background-color: $primiry-color;
         display: flex;
         justify-content: center;
@@ -60,31 +60,31 @@
         display: flex;
         flex-wrap: wrap;
         font-weight: 500;
-        font-size: 1.125rem;
+        font-size: 18px;
         line-height: 1.22;
         letter-spacing: 0.02em;
     }
     .menu-nav__sochial--networks:not(:last-of-type) {
-        border-right: 0.0625rem solid rgba(33, 33, 33, 0.2);
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
     }
     .menu-nav__item .menu-nav__link {
-    font-size: 2.5rem;
+    font-size: 40px;
     }
     .main-nav.container {
-        padding-top: 0.625rem;
-        padding-bottom: 0.625rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
         flex-direction: row;
     }
     .menu-nav__link.phone-number {
         padding: 0;
-        font-size: 2.125rem;
+        font-size: 34px;
         line-height: 1.176;
         color: $activity-color;
     }
     .menu-nav__link.mail {
         padding: 0;
-        margin-top: 2rem;
-        font-size: 1.5rem;
+        margin-top: 16px;
+        font-size: 24px;
         line-height: 1.167;
         color: $secondary-text-color;
     }   
@@ -93,11 +93,11 @@
         flex-wrap: wrap;
     }
     .menu-nav__sochial.list {
-        margin-left: -0.625rem;
-        margin-top: 4rem;
+        margin-left: -10px;
+        margin-top: 64px;
     }
     .menu-nav__sochial--networks {
-        padding: 0 0.625rem;
+        padding: 0 10px;
     }
     .menu-nav__sochial--contact {
         color: $activity-color;
@@ -109,7 +109,7 @@
         display: inline-flex;
         }
     .menu-nav__container {
-        width: calc(100% - 7.8125rem - 1.875rem - (100% - 7.8125rem - 1.875rem - 18.3125rem - 10.3125rem)/2);
+        width: calc(100% - 125px - 30px - (100% - 125px - 30px - 293px - 165px)/2);
         position: relative;
         padding: 0;
         display: flex;
@@ -131,16 +131,16 @@
         display: none;
     }
     .menu-nav > .menu-nav__item .menu-nav__link {
-        padding: 2rem 0;
-        font-size: 0.875rem;
+        padding: 16px 0;
+        font-size: 14px;
         }
     .menu-nav__item .menu-nav__link.contact {
-        padding-bottom: 0rem;
-        font-size: 0.875rem;
+        padding-bottom: 0px;
+        font-size: 14px;
         color: $secondary-text-color;
     }
     .menu-nav--contact-position.list > .menu-nav__item:first-of-type {
-        margin-bottom: 0.625rem;
+        margin-bottom: 10px;
     }
     .menu-nav__link.menu-nav__link--location {
         &::after {
@@ -151,8 +151,8 @@
         bottom: 0;
         margin: 0;
         padding: 0;
-        border-bottom: 0.25rem solid $activity-color;
-        border-radius: 0.125rem;
+        border-bottom: 4px solid $activity-color;
+        border-radius: 2px;
         transform: scaleX(0);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
             &:hover, &:focus {
@@ -179,7 +179,7 @@
         flex-direction: column;
     }
     .menu-nav .menu-nav__item:not(:last-child) {
-            margin-right: 3.125rem;
+            margin-right: 50px;
         }
     .menu-nav__item > .menu-nav__link {
         &.active::after {
@@ -223,12 +223,12 @@
         display: none;
     }
     .menu-nav > .menu-nav__item .menu-nav__link {
-        padding: 2rem 0;
-        font-size: 0.875rem;
+        padding: 16px 0;
+        font-size: 14px;
         }
     .menu-nav__item .menu-nav__link.contact {
-        padding-bottom: 0rem;
-        font-size: 0.875rem;
+        padding-bottom: 0px;
+        font-size: 14px;
         color: $secondary-text-color;
     }
     .menu-nav__link.menu-nav__link--location {
@@ -240,8 +240,8 @@
         bottom: 0;
         margin: 0;
         padding: 0;
-        border-bottom: 0.25rem solid $activity-color;
-        border-radius: 0.125rem;
+        border-bottom: 4px solid $activity-color;
+        border-radius: 2px;
         transform: scaleX(0);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
             &:hover, &:focus {
@@ -267,7 +267,7 @@
         margin-left: auto;
     }
     .menu-nav {
-        margin-left: 5.8125rem;
+        margin-left: 5.812550px;
     }
     .menu-nav--contact-position.list {
         display: flex;
@@ -275,7 +275,7 @@
     }
     .menu-nav .menu-nav__item:not(:last-child),
     .menu-nav--contact-position .menu-nav__item:not(:last-child) {
-        margin-right: 3.125rem;
+        margin-right: 50px;
     }
     .menu-nav__item > .menu-nav__link {
         &.active::after {
@@ -293,12 +293,12 @@
     }
 }
 .page-header {
-    border-bottom: 0.0625rem solid $header-border-color;
+    border-bottom: 1px solid $header-border-color;
 }
 .main-nav.container {
     display: flex;
     justify-content: space-between;
-    padding: 0 0.9375rem;
+    padding: 0 15px;
     background-color: $primiry-color;
 }
 .menu-nav.list,
@@ -313,7 +313,7 @@
     margin: 0;
     font-family: $secondary-font;
     font-weight: 700;
-    font-size: 1.625rem;
+    font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
 }
@@ -326,7 +326,7 @@
 .menu-nav__item .menu-nav__link {
     display: block;
     position: relative;
-    padding-bottom: 2rem;
+    padding-bottom: 16px;
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: 0.02em;
