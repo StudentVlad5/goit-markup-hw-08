@@ -2,17 +2,17 @@ body {
     font-family: $primiry-font;
     color: $main-text-color;
     background-color: $primiry-color;
-    font-size: 16px;    // 16px;
-    width: 100%;
+    font-size: 16px;
+    width: auto;
     margin: 0 auto;
+    @media screen and (max-width: 767px) {
+        max-width: $mobile;
+    }
     @media screen and (min-width: $tablet) and (max-width: $desctop) {
         max-width: $tablet;
     }
     @media screen and (min-width: $desctop) {
         min-width: $desctop;
-    }
-    @media screen and (max-width: $tablet) {
-        min-width: $mobile;
     }
 }
 a {
@@ -103,7 +103,8 @@ input[type="checkbox"] {
         max-width: $tablet;
     }
     @media screen and (max-width: $tablet) {
-        min-width: $mobile;
+        max-width: $mobile;
+        width: auto;
     }
     @media screen and (min-width: $desctop) {
         max-width: $desctop;

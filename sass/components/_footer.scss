@@ -119,7 +119,7 @@
     color: $secondary-footer-text-color;
 }
 .footer__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 }
 .footer__item.link {
     padding-top: 10px;
@@ -132,6 +132,7 @@
     text-transform: uppercase;
     color: $primiry-color;
     margin-top: 0;
+    margin-bottom: 20px;
 }
 .footer__list--social {
     display: flex;
@@ -177,4 +178,10 @@
 } 
 .icon.icon-iconsend {
     margin-left: 10px;
+}
+.post-address .footer__item p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }

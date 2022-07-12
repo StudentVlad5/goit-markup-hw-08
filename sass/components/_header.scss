@@ -3,6 +3,19 @@
     .icon-smartphone {
         display: none;
         }
+    .menu-nav--contact-position {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .menu-nav__link.contact.link-phone{
+        font-size: 34px;
+        line-height: 1.176;
+        color: $activity-color;
+    }
+    .menu-nav__link.contact.link-mail{
+        font-size: 24px;
+        line-height: 1.1667;
+    }
     .main-nav.container {
         display: flex;
         align-items: center;
@@ -214,6 +227,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-left: 93px
     }
     .menu-nav--contact-position.list>.menu-nav__item:first-of-type {
         margin-bottom: 0;
@@ -297,6 +311,7 @@
 }
 .main-nav.container {
     display: flex;
+    position: relative;
     justify-content: space-between;
     padding: 0 15px;
     background-color: $primiry-color;
@@ -313,7 +328,7 @@
     margin: 0;
     font-family: $secondary-font;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.2;
     letter-spacing: 0.03em;
 }
