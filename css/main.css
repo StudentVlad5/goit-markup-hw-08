@@ -420,7 +420,7 @@ body {
   width: auto;
   margin: 0 auto;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   body {
     max-width: 480px;
   }
@@ -577,7 +577,7 @@ input[type=checkbox] {
     max-width: 768px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.9px) {
   .container {
     max-width: 480px;
     width: auto;
@@ -796,7 +796,7 @@ img {
     display: none;
   }
   .menu-nav > .menu-nav__item .menu-nav__link {
-    padding: 16px 0;
+    padding: 32px 0;
     font-size: 14px;
   }
   .menu-nav__item .menu-nav__link.contact {
