@@ -1554,8 +1554,8 @@ img {
     margin-top: 0;
   }
   .poster__item {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    -ms-flex-preferred-size: calc(50% - 15px);
+        flex-basis: calc(50% - 15px);
     margin-bottom: 30px;
     margin-top: 0;
   }
@@ -1569,8 +1569,8 @@ img {
     margin-bottom: 0;
   }
   .poster__item {
-    -ms-flex-preferred-size: 33.3333333333%;
-        flex-basis: 33.3333333333%;
+    -ms-flex-preferred-size: calc(33.3333333333% - 60px);
+        flex-basis: calc(33.3333333333% - 60px);
     margin-top: 30px;
     margin-left: 30px;
   }
