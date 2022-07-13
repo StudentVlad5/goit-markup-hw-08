@@ -15,6 +15,9 @@
     .advantages__list {
         margin: -15px;
     }
+    .advantages__item .advantages__title {
+        text-align: left;
+    }
 }
 @media  screen and (min-width: $desctop) {
     .advantages__list {
@@ -33,6 +36,9 @@
     }
     .adventages.section--position {
         padding-bottom: 0;
+    }
+    .advantages__item .advantages__title {
+        text-align: left;
     }
 }
 .advantages__list {
