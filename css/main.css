@@ -422,12 +422,12 @@ body {
 }
 @media screen and (max-width: 767.9px) {
   body {
-    max-width: 480px;
+    max-width: 767.9px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   body {
-    max-width: 768px;
+    max-width: 1199.9px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -570,22 +570,24 @@ input[type=checkbox] {
 
 .container {
   margin: 0 auto;
-  padding: 60px 15px;
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .container {
     max-width: 768px;
+    padding: 60px 15px;
   }
 }
 @media screen and (max-width: 767.9px) {
   .container {
     max-width: 480px;
+    padding: 60px 15px;
     width: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
+    padding: 94px 15px;
   }
 }
 
@@ -1156,8 +1158,7 @@ img {
 }
 
 .container.hero__container {
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0;
 }
 
 @media screen and (max-width: 768px) {
