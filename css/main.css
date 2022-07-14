@@ -1262,6 +1262,9 @@ img {
   .doing {
     display: block;
   }
+  .container.our-projects {
+    padding-top: 0;
+  }
   .doing__list .item:not(:nth-child(3n)) {
     margin-right: 30px;
   }
