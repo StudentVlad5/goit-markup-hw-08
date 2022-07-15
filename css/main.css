@@ -325,6 +325,7 @@
 .form__question > .comments-form:hover, .form__question > .comments-form:focus, .form__question > .comments-form:active {
   color: #2196F3;
   border: 1px solid #2196F3;
+  outline: none;
 }
 
 .form-icon {

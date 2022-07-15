@@ -94,6 +94,7 @@
     & > .comments-form:active {
         color: $activity-color;
         border: 1px solid $activity-color;
+        outline: none;
     }
 }
 .form-icon {
