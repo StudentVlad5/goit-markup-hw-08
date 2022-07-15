@@ -136,6 +136,7 @@
     &:active {
         color: $activity-color;
         border: 1px solid $activity-color;
+        outline: none;
     }
     &:hover ~ .form-icon,
     &:focus ~ .form-icon,

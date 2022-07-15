@@ -375,6 +375,7 @@
 .input-form:hover, .input-form:focus, .input-form:active {
   color: #2196F3;
   border: 1px solid #2196F3;
+  outline: none;
 }
 .input-form:hover ~ .form-icon, .input-form:focus ~ .form-icon, .input-form:active ~ .form-icon {
   fill: #2196F3;
