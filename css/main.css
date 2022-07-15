@@ -229,13 +229,22 @@
 
 .backdrop__modal {
   display: inline-block;
-  height: 609px;
   margin: 94px 15px;
   overflow: hidden;
   vertical-align: middle;
   position: relative;
   text-align: left;
   background: #FFFFFF;
+}
+@media screen and (max-width: 1199.9px) {
+  .backdrop__modal {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .backdrop__modal {
+    min-width: 558px;
+  }
 }
 
 .backdrop.is-hidden {
@@ -481,6 +490,12 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
 }
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 36px;
+    line-height: 1.1667;
+  }
+}
 
 .doing__list,
 .clients__list {
@@ -493,6 +508,12 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .doing__list,
+.clients__list {
+    margin-top: 50px;
+  }
 }
 
 textarea {
@@ -1068,6 +1089,11 @@ img {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/main/header_450_3x.jpg);
   }
 }
+@media screen and (max-width: 768px) {
+  .hero--style {
+    margin: 118px 0;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .hero.section--position {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/main/header_768_1x.jpg);
@@ -1086,6 +1112,11 @@ img {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/main/header_768_3x.jpg);
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .hero--style {
+    margin: 118px 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero.section--position {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/main/header_1600_1x.jpg);
@@ -1102,6 +1133,17 @@ img {
   .hero.section--position {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/main/header_1600_3x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/main/header_1600_3x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero--style {
+    margin: 200px 0;
   }
 }
 .hero.section--position {
@@ -1131,10 +1173,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.hero--style {
-  margin: 118px 60px;
 }
 
 .standartButtom {
@@ -1319,7 +1357,7 @@ img {
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .team__item {
-    width: calc(50% - 30px);
+    width: 50%;
     padding: 15px;
     margin: 0;
   }
@@ -1466,6 +1504,9 @@ img {
     width: 50%;
     padding: 15px;
   }
+  .list.clients__list {
+    margin: 15px -15px -15px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .clients__item {
@@ -1474,6 +1515,9 @@ img {
     display: flex;
     width: 33.3333333333%;
     padding: 15px;
+  }
+  .list.clients__list {
+    margin: 15px -15px -15px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1484,6 +1528,9 @@ img {
     width: 16.6666666667%;
     padding: 15px;
   }
+  .list.clients__list {
+    margin: 35px -15px -15px;
+  }
 }
 .list.clients__list {
   display: -webkit-box;
@@ -1492,8 +1539,6 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 15px;
-  margin: 15px -15px -15px;
 }
 
 .clients__link {
@@ -1541,6 +1586,9 @@ img {
   .poster__item {
     margin-top: 30px;
   }
+  .list.filter__list {
+    margin-bottom: 40px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
   .poster__list {
@@ -1565,6 +1613,9 @@ img {
   }
   .poster__item:nth-child(odd) {
     margin-right: 30px;
+  }
+  .list.filter__list {
+    margin-bottom: 30px;
   }
 }
 @media (min-width: 1200px) {
@@ -1596,6 +1647,9 @@ img {
   .poster__item .poster__card {
     width: 370px;
   }
+  .list.filter__list {
+    margin-bottom: 50px;
+  }
 }
 .filter__title--do-not-show {
   display: none;
@@ -1618,7 +1672,6 @@ img {
       -ms-flex-pack: left;
           justify-content: left;
   margin-top: -15px;
-  margin-bottom: 40px;
 }
 
 .filter-button {
@@ -1826,6 +1879,7 @@ p.poster__project--name {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     width: auto;
+    padding: 60px 15px;
   }
   .column {
     text-align: left;

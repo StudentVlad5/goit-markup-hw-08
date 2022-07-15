@@ -14,13 +14,18 @@
 }
 .backdrop__modal {
     display: inline-block;
-    height: 609px;
     margin: 94px 15px;
     overflow: hidden;
     vertical-align: middle;
     position: relative;
     text-align: left;
-    background: $primiry-color;    
+    background: $primiry-color; 
+    @media screen and (max-width: 1199.9px) {
+        max-width: 480px;  
+    }
+    @media screen and (min-width: $desctop) {
+        min-width: 558px;  
+    }
 }
 .backdrop.is-hidden {
     visibility: hidden;

@@ -52,6 +52,10 @@ button {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    @media screen and (min-width: $desctop) {
+        font-size: 36px;
+        line-height: 1.1667;
+    }
 }
 .doing__list,
 .clients__list {
@@ -59,6 +63,9 @@ button {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 30px;
+    @media screen and (min-width: $desctop) {
+        margin-top: 50px;
+    }
 }
 textarea {
     resize: none;

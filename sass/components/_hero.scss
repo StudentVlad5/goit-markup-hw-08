@@ -18,6 +18,9 @@
             }   
         }  
     }
+    .hero--style {
+        margin: 118px 0;
+    }
 }
 @media screen and (min-width: $tablet) and (max-width: $desctop) {
     .hero.section--position {
@@ -38,6 +41,9 @@
                 url(../../images/main/header_768_3x.jpg);
             }   
         }  
+    }
+    .hero--style {
+        margin: 118px 0;
     }
 }
 @media screen and (min-width: $desctop) {
@@ -60,6 +66,13 @@
             }   
         }  
     }
+    .hero__title {
+        font-size: 44px;
+        line-height: 1.36;
+    }
+    .hero--style {
+        margin: 200px 0;
+    }
 }
 .hero.section--position {
     max-width: 1600px;
@@ -77,9 +90,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.hero--style {
-    margin: 118px 60px;
 }
 .standartButtom {
     display: block;
