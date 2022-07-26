@@ -162,7 +162,7 @@
         width: 100%;
         content: "";
         bottom: 0;
-        margin: 0;
+        margin: 0 0 -1px;
         padding: 0;
         border-bottom: 4px solid $activity-color;
         border-radius: 2px;
@@ -229,6 +229,10 @@
         justify-content: space-between;
         margin-left: 93px
     }
+    .list .menu-nav__item {
+        display: flex;
+        align-items: center;
+    }
     .menu-nav--contact-position.list>.menu-nav__item:first-of-type {
         margin-bottom: 0;
     }
@@ -252,7 +256,7 @@
         width: 100%;
         content: "";
         bottom: 0;
-        margin: 0;
+        margin: 0 0 -1px;
         padding: 0;
         border-bottom: 4px solid $activity-color;
         border-radius: 2px;
@@ -339,7 +343,7 @@
     color: $activity-color;
 }
 .menu-nav__item .menu-nav__link {
-    display: block;
+    display: flex;
     position: relative;
     padding-bottom: 16px;
     font-weight: 500;

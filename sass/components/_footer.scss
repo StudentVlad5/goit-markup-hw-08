@@ -81,13 +81,9 @@
         margin-bottom: 0;
     }
     .footer__column3 {
-        width: 100%;
         text-align: left;
         margin-top: 0;
     } 
-    .footer__list--mail {
-        width: 570px;
-    }
     .mail--submit {
         width: 100%;
         justify-content: space-between;
@@ -150,6 +146,12 @@
     flex-wrap: wrap;
     width: 100%;
     align-items: center;
+    @media screen and (min-width :$desctop) {
+            width: 570px;
+            justify-content: space-between;
+ 
+        }
+    
 }
 .footer__list--mail {
     justify-content: center;
